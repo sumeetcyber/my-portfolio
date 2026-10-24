@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" data-theme="midnight">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0d12">
+<meta name="description" content="Cybersecurity portfolio — projects, practical proof, and tools built by Sumeet Jha.">
+<title>Sumeet Jha — Cybersecurity & Builder</title>
+<style>
+:root{--bg:#0b0d12;--panel:#11151d;--panel2:#171d28;--text:#f0f3f8;--muted:#a0a9b8;--line:#293140;--accent:#a7f36b;--accent2:#7c9cff;--shadow:0 18px 50px #0003;--radius:18px}
+html[data-theme="light"]{--bg:#f4f6f8;--panel:#fff;--panel2:#edf1f5;--text:#171b22;--muted:#596474;--line:#d8dee7;--accent:#327d18;--accent2:#315bd6;--shadow:0 18px 50px #1c2a3b12}
+html[data-theme="cyber"]{--bg:#080d12;--panel:#0d171c;--panel2:#11232a;--text:#e8fffc;--muted:#8eb9ba;--line:#1d4246;--accent:#00f5c4;--accent2:#ff5bce}
+html[data-theme="paper"]{--bg:#f2eadb;--panel:#fff9ec;--panel2:#eee2cb;--text:#29251e;--muted:#766d5d;--line:#d7c8ae;--accent:#a34c25;--accent2:#365e7d}
+html[data-theme="plum"]{--bg:#100c18;--panel:#1b1427;--panel2:#271b38;--text:#f5efff;--muted:#b5a7ca;--line:#423054;--accent:#d6a2ff;--accent2:#ff9bbd}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;transition:background .2s,color .2s}a{color:inherit;text-decoration:none}button,select{font:inherit}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:-.04em}.brand span{color:var(--accent)}.navlinks{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--text)}.theme{background:var(--panel);color:var(--text);border:1px solid var(--line);padding:9px 12px;border-radius:10px}.hero{padding:76px 0 48px;display:grid;grid-template-columns:1.45fr .75fr;gap:40px;align-items:center}.eyebrow{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.16em;color:var(--accent)}h1{font-size:clamp(42px,7vw,76px);line-height:.99;letter-spacing:-.065em;margin:16px 0 22px;max-width:780px}h1 em{font-style:normal;color:var(--accent)}.lead{color:var(--muted);font-size:18px;max-width:670px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 16px;border-radius:12px;border:1px solid var(--line);font-weight:750;font-size:14px;transition:transform .15s,border .15s}.btn:hover{transform:translateY(-2px);border-color:var(--accent)}.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}.mini-links{display:flex;gap:17px;flex-wrap:wrap;color:var(--muted);font-size:13px}.mini-links a:hover{color:var(--accent)}.hero-card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero-card:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-80px;top:-90px;background:var(--accent);filter:blur(90px);opacity:.13}.cardtop{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);margin-bottom:22px}.dot{width:8px;height:8px;background:var(--accent);border-radius:50%;display:inline-block;margin-right:7px;box-shadow:0 0 14px var(--accent)}.case-title{font-size:28px;line-height:1.1;font-weight:850;letter-spacing:-.04em;margin:8px 0 12px}.case-desc{color:var(--muted);font-size:14px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0}.chip{border:1px solid var(--line);border-radius:100px;padding:5px 9px;color:var(--muted);font-size:11px}.textlink{color:var(--accent);font-weight:800;font-size:13px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0 8px}.stat{border-top:1px solid var(--line);padding-top:13px}.stat strong{display:block;font-size:17px}.stat span{font-size:11px;color:var(--muted)}section{padding:50px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:800}.section-head h2{font-size:clamp(28px,4vw,42px);line-height:1.05;letter-spacing:-.05em;margin:8px 0 0}.section-head p{max-width:440px;color:var(--muted);margin:0;font-size:14px}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;min-height:260px;transition:transform .18s,border-color .18s}.project:hover{transform:translateY(-3px);border-color:var(--accent)}.project.featured{background:linear-gradient(135deg,var(--panel2),var(--panel));border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}.project-head{display:flex;align-items:center;justify-content:space-between;gap:14px}.project-icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:var(--panel2);border:1px solid var(--line);font-size:20px}.project-type{font-size:11px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.1em}.project h3{font-size:23px;letter-spacing:-.04em;margin:18px 0 8px}.project p{color:var(--muted);font-size:14px;margin:0 0 18px}.proof{border-top:1px solid var(--line);padding-top:13px;margin-top:auto;font-size:12px;color:var(--muted)}.proof b{color:var(--text)}.project-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:15px}.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:16px}.skill h3{font-size:16px;margin:0 0 7px}.skill p{font-size:13px;color:var(--muted);margin:0 0 13px}.skill .proof{padding-top:10px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px}.panel h3{margin:0 0 12px;font-size:20px}.panel p,.panel li{color:var(--muted);font-size:14px}.panel ul{padding-left:18px}.edu{display:flex;gap:14px;align-items:flex-start}.edu-mark{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;background:var(--panel2);flex:none}.edu strong{display:block}.edu small{color:var(--muted)}.contact{border:1px solid var(--line);border-radius:24px;padding:32px;background:linear-gradient(135deg,var(--panel2),var(--panel));display:flex;justify-content:space-between;align-items:center;gap:25px}.contact h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.05em;line-height:1.05;margin:8px 0}.contact p{color:var(--muted);max-width:560px}.footer{padding:28px 0 40px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);margin-top:50px}.reveal{opacity:0;transform:translateY(12px);transition:opacity .5s,transform .5s}.reveal.visible{opacity:1;transform:none}.mobile-menu{display:none}
+@media(max-width:760px){.navlinks{gap:12px}.navlinks a:not(:last-child){display:none}.hero{grid-template-columns:1fr;padding-top:48px;gap:24px}.projects,.skills,.about-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.contact{align-items:flex-start;flex-direction:column}.stats{gap:8px}.stat strong{font-size:15px}.footer{flex-direction:column}.wrap{width:min(100% - 28px,1120px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+  <a class="brand" href="#top">SJ<span>.</span></a>
+  <nav class="navlinks" aria-label="Main navigation"><a href="#work">Projects</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <select class="theme" id="theme" aria-label="Choose color theme"><option value="midnight">Midnight</option><option value="light">Light</option><option value="cyber">Cyber</option><option value="paper">Paper</option><option value="plum">Plum</option></select>
+  </nav>
+</div></header>
+<main id="top" class="wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Cybersecurity · Practical projects · Builder</div>
+      <h1>I build tools that turn <em>signals into action.</em></h1>
+      <p class="lead">I'm Sumeet Jha — an aspiring SOC analyst who learns by building, testing, and documenting. This is the proof: projects that make information easier to investigate, remember, and act on.</p>
+      <div class="actions"><a class="btn primary" href="#work">Explore the proof ↓</a><a class="btn" href="https://www.linkedin.com/in/sumeet--jha/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/sumeetcyber" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      <div class="mini-links"><a href="https://tryhackme.com/p/sumeetjha" target="_blank" rel="noreferrer">TryHackMe profile ↗</a><a href="https://sumeetcyber.github.io/daily-sort/" target="_blank" rel="noreferrer">Live projects ↗</a></div>
+    </div>
+    <aside class="hero-card">
+      <div class="cardtop"><span><i class="dot"></i> FEATURED PROJECT</span><span>01 / CASE MEMORY</span></div>
+      <div class="case-title">Case Memory</div>
+      <p class="case-desc">An investigation companion concept: connect a new alert to relevant historical cases, surface useful context, and suggest where an analyst should look next.</p>
+      <div class="chips"><span class="chip">SOC workflow</span><span class="chip">Alert context</span><span class="chip">AI-assisted triage</span></div>
+      <a class="textlink" href="https://github.com/sumeetcyber" target="_blank" rel="noreferrer">Explore project work on GitHub ↗</a>
+      <div class="stats"><div class="stat"><strong>Context</strong><span>Find related cases</span></div><div class="stat"><strong>Speed</strong><span>Reduce repeat work</span></div><div class="stat"><strong>Next step</strong><span>Guide investigation</span></div></div>
+    </aside>
+  </section>
+
+  <section id="work">
+    <div class="section-head"><div><div class="kicker">Selected work</div><h2>Projects over claims.</h2></div><p>Each project is evidence of a way of thinking: build a workflow, handle real constraints, and make the result usable.</p></div>
+    <div class="projects">
+      <article class="project featured reveal">
+        <div class="project-head"><div class="project-icon">⌁</div><span class="project-type">Cybersecurity · Featured</span></div>
+        <h3>Case Memory</h3><p>A SOC-focused concept for matching incoming alerts with earlier cases and surfacing investigation context. Designed around the analyst's next useful action, not just another dashboard.</p>
+        <div class="chips"><span class="chip">Alert triage</span><span class="chip">Case correlation</span><span class="chip">AI recommendations</span></div>
+        <div class="proof"><b>Proof of:</b> problem framing, security workflows, product thinking, and translating a repetitive task into a tool.</div>
+        <div class="project-foot"><span class="textlink">Featured project</span><a class="textlink" href="https://github.com/sumeetcyber" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      </article>
+      <article class="project reveal">
+        <div class="project-head"><div class="project-icon">◷</div><span class="project-type">Time & data</span></div>
+        <h3>Hours</h3><p>A time-logging web app focused on recording activity, reviewing patterns, and making time visible. Built with a practical web stack and deployed online.</p>
+        <div class="chips"><span class="chip">JavaScript</span><span class="chip">Supabase</span><span class="chip">Render</span></div>
+        <div class="proof"><b>Proof of:</b> full-stack implementation, state handling, auth/sync exploration, deployment and debugging.</div>
+        <div class="project-foot"><span class="textlink">Live app</span><a class="textlink" href="https://hours-yvm9.onrender.com/dashboard.html" target="_blank" rel="noreferrer">Open Hours ↗</a></div>
+      </article>
+      <article class="project reveal">
+        <div class="project-head"><div class="project-icon">↗</div><span class="project-type">Productivity</span></div>
+        <h3>Daily Sort</h3><p>A deliberately lightweight task sorter for moving work between “Today” and “Not Today” so priorities stay visible and decisions stay simple.</p>
+        <div class="chips"><span class="chip">Task workflow</span><span class="chip">Local persistence</span><span class="chip">UX iteration</span></div>
+        <div class="proof"><b>Proof of:</b> user-centered design, workflow simplification, iterative product development.</div>
+        <div class="project-foot"><span class="textlink">Live app</span><a class="textlink" href="https://sumeetcyber.github.io/daily-sort/" target="_blank" rel="noreferrer">Open Daily Sort ↗</a></div>
+      </article>
+      <article class="project reveal">
+        <div class="project-head"><div class="project-icon">⌘</div><span class="project-type">Learning tool</span></div>
+        <h3>C Recall</h3><p>A browser-based C programming recall trainer built to practice reproducing code, compare attempts, and track progress instead of passively rereading.</p>
+        <div class="chips"><span class="chip">JavaScript</span><span class="chip">Code comparison</span><span class="chip">Learning UX</span></div>
+        <div class="proof"><b>Proof of:</b> logic, text processing, feedback design, and turning a personal learning problem into software.</div>
+        <div class="project-foot"><span class="textlink">Live app</span><a class="textlink" href="https://sumeetcyber.github.io/c-recall/" target="_blank" rel="noreferrer">Open C Recall ↗</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-head"><div><div class="kicker">Skills with receipts</div><h2>What I can demonstrate.</h2></div><p>Not a keyword dump. These are practical areas I can discuss through the work above and my learning profile.</p></div>
+    <div class="skills">
+      <article class="skill reveal"><h3>Security thinking</h3><p>Frame an alert as an investigation problem: what happened, what context is missing, and what should be checked next.</p><div class="proof"><b>Evidence:</b> Case Memory concept + TryHackMe learning profile.</div></article>
+      <article class="skill reveal"><h3>Web development</h3><p>Build browser-based tools, interactive interfaces, stateful workflows, and deployable applications.</p><div class="proof"><b>Evidence:</b> Hours, Daily Sort, C Recall.</div></article>
+      <article class="skill reveal"><h3>Debugging & iteration</h3><p>Work through deployment errors, broken flows, persistence issues, and UI friction instead of stopping at the mock-up.</p><div class="proof"><b>Evidence:</b> Live apps and ongoing project iteration.</div></article>
+      <article class="skill reveal"><h3>Workflow design</h3><p>Turn messy, repeated decisions into clear steps and interfaces that reduce cognitive load.</p><div class="proof"><b>Evidence:</b> Daily Sort + Case Memory.</div></article>
+      <article class="skill reveal"><h3>Learning systems</h3><p>Build feedback loops for practice, recall, and measuring attempts rather than relying on passive study.</p><div class="proof"><b>Evidence:</b> C Recall.</div></article>
+      <article class="skill reveal"><h3>Technical communication</h3><p>Explain a project through its problem, design choices, trade-offs, and what should be tested next.</p><div class="proof"><b>Evidence:</b> Project documentation and portfolio walkthroughs.</div></article>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-head"><div><div class="kicker">Background</div><h2>Curious, hands-on, building in public.</h2></div></div>
+    <div class="about-grid">
+      <div class="panel reveal"><h3>How I work</h3><p>I prefer concrete tasks, repeatable workflows, and evidence over vague claims. I learn by building small tools, testing them against real friction, and improving what doesn't work.</p><p>My direction is cybersecurity and SOC analysis, supported by practical software projects and continuous hands-on learning.</p><div class="chips"><span class="chip">Build</span><span class="chip">Test</span><span class="chip">Document</span><span class="chip">Improve</span></div></div>
+      <div class="panel reveal"><h3>Education & profiles</h3>
+        <div class="edu"><div class="edu-mark">🎓</div><div><strong>Jaipur National University</strong><small>Education · Jaipur, India</small><p>Academic background alongside independent project work.</p></div></div>
+        <div class="chips"><a class="chip" href="https://www.linkedin.com/in/sumeet--jha/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="chip" href="https://tryhackme.com/p/sumeetjha" target="_blank" rel="noreferrer">TryHackMe ↗</a><a class="chip" href="https://github.com/sumeetcyber" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact reveal"><div><div class="kicker">Let's talk</div><h2>Give me a real problem.</h2><p>Interested in SOC analyst opportunities, cybersecurity projects, or practical collaboration? Start with the work, then let's talk about what I can contribute.</p></div><div class="actions"><a class="btn primary" href="https://www.linkedin.com/in/sumeet--jha/" target="_blank" rel="noreferrer">Message on LinkedIn ↗</a><a class="btn" href="https://github.com/sumeetcyber" target="_blank" rel="noreferrer">View GitHub ↗</a></div></div>
+  </section>
+</main>
+<footer class="wrap footer"><span>© <span id="year"></span> Sumeet Jha</span><span>Built around proof, not buzzwords.</span><a href="#top">Back to top ↑</a></footer>
+<script>
+const root=document.documentElement, themeSelect=document.getElementById('theme');
+const savedTheme=localStorage.getItem('sj-portfolio-theme');
+if(savedTheme && ['midnight','light','cyber','paper','plum'].includes(savedTheme)){root.dataset.theme=savedTheme;themeSelect.value=savedTheme;}
+themeSelect.addEventListener('change',()=>{root.dataset.theme=themeSelect.value;localStorage.setItem('sj-portfolio-theme',themeSelect.value);});
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
